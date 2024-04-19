@@ -7,7 +7,7 @@
 	<img src="https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png" height="40" alt="docker"/>
 </p>
 
-## Installation
+## Setup
 
 1. Install packages
 
@@ -20,6 +20,10 @@
 	```bash
 	npm install -g nodemon
 	```
+
+3. Create an .env file based on the .env.example file
+
+	> See the [Official PayOS documentation](https://payos.vn/docs/api/) to know how to get client_id, api_key and checksum_key.
 
 ## How to run
 

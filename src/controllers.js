@@ -47,7 +47,7 @@ async function verifyPayment(req, res) {
 	if (paymentLinkInfo.status === ORDER_STATUS.PAID)
 	{
 		res.json({
-			status: ORDER_STATUS.SUCCESS,
+			status: ORDER_STATUS.PAID,
 			link: 'https://drive.google.com/file/d/1DaoW9CH7ri29mHZ5Qtxl6uMo-wH3X4ol/view'
 		})
 		return;
@@ -57,7 +57,6 @@ async function verifyPayment(req, res) {
 
 module.exports = {
 	createPaymentLink,
-	receiveHook,
 	renderHome,
 	renderPaymentPage,
 	renderErrorPage,

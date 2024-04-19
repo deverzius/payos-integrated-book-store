@@ -1,6 +1,6 @@
 const express = require('express');
 const constants = require('./common/constants');
-const { createPaymentLink, receiveHook, renderHome, renderPaymentPage, renderErrorPage, verifyPayment } = require('./controllers');
+const { createPaymentLink, renderHome, renderPaymentPage, renderErrorPage, verifyPayment } = require('./controllers');
 
 const app = express();
 app.set('view engine', 'ejs');
